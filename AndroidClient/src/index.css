@@ -1,0 +1,124 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --background: 220 20% 96%;
+    --foreground: 220 17% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 17% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 17% 11%;
+    --primary: 214 60% 44%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 72% 56%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 214 60% 44%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 0 0% 100%;
+    --warning: 43 71% 50%;
+    --warning-foreground: 0 0% 100%;
+    --success: 145 63% 42%;
+    --success-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 220 17% 11%;
+    --foreground: 210 40% 98%;
+    --card: 220 17% 14%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 17% 14%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 214 60% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 72% 50%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 214 60% 50%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 0 0% 100%;
+    --warning: 43 71% 55%;
+    --warning-foreground: 0 0% 100%;
+    --success: 145 63% 50%;
+    --success-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 3px;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@keyframes emergency-breath {
+  0%, 100% {
+    background-color: rgba(229, 62, 62, 0.1);
+  }
+  50% {
+    background-color: rgba(229, 62, 62, 0.4);
+  }
+}
+
+.emergency-breathing {
+  animation: emergency-breath 1s ease-in-out infinite;
+}

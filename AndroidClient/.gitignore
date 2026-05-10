@@ -1,0 +1,58 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+output
+*.local
+package-lock.json
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.sync
+history/*.json
+.vite_cache
+
+# Environment files
+.env
+
+# Build outputs
+*.apk
+*.aab
+*.apks
+
+# Android / Capacitor build outputs
+android/app/build/
+android/.gradle/
+android/build/
+android/captures/
+android/local.properties
+.gradle/
+build/
+captures/
+
+# Android Studio
+*.iml
+.externalNativeBuild/
+.navigation/
+
+# Claude AI local config
+.claude/
+
+# Trae AI local files
+.trae/

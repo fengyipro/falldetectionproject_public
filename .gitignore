@@ -1,0 +1,14 @@
+# Large model / binary files
+*.pt
+*.pth
+*.onnx
+
+# Trae AI local files
+.trae/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large generated text files
+historical_context.txt

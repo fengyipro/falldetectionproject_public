@@ -18,6 +18,9 @@ JI FENG SHUO | ZHONG YU HONG | ZHANG SUN WU JI
 
 深圳零一学院PSRT一小帮一老产品
 
+#### 上线模式
+项目已上线个人网站: spotfall.top
+
 ***
 
 ## 1. 项目简介
